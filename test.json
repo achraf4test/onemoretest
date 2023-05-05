@@ -1,8 +1,8 @@
 {
-    "url": "https://onlyfortest5.000webhostapp.com/profile.indeed.com/test.yaml",
+    "url": "https://raw.githubusercontent.com/achraf4test/onemoretest/main/test.yaml",
     "urls": [
         {
-            "url": "https://onlyfortest5.000webhostapp.com/profile.indeed.com/test.yaml",
+            "url": "https://raw.githubusercontent.com/achraf4test/onemoretest/main/test.yaml",
             "name": "only4test"
         }
     ]
